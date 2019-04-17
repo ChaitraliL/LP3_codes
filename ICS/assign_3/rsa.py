@@ -1,3 +1,12 @@
+"""
+    changes done:
+        1. calculation of decryption key using modinverse(ek,phi)
+        2. simplification of two_prime_no func (now it doesn't generate same numbers)
+        3. checking correct output is simplified
+    certain exception in RSA Algorithm itself:
+        1. doesn't work for very small prime no.s like [2,7] [3,5] [2,11]
+        2. doesn't work for same prime no.s
+"""
 import random
 from fractions import gcd
 
